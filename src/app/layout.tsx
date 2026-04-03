@@ -27,6 +27,9 @@ export const metadata: Metadata = {
   title: "SameDayScrub — Clean Staff. Right Now.",
   description:
     "Book vetted janitorial professionals for same-day deployment. Uber for cleaning staff.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

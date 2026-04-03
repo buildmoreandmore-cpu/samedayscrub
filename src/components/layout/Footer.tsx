@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,9 +7,13 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-heading text-lg font-bold mb-3">SameDayScrub</h3>
+            <div className="flex items-center gap-2 mb-3">
+              <Image src="/icon.svg" alt="SameDayScrub" width={24} height={24} />
+              <h3 className="font-heading text-lg font-bold">SameDayScrub</h3>
+            </div>
+            <p className="text-primary font-mono text-xs tracking-wider mb-2">&ldquo;Clean staff. Right now.&rdquo;</p>
             <p className="text-gray-400 text-sm">
-              Clean staff. Right now. Vetted janitorial professionals deployed same day.
+              Vetted janitorial professionals deployed same day.
             </p>
           </div>
           <div>

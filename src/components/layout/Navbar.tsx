@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -9,8 +10,9 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="font-heading text-xl font-bold text-navy">
-          SameDayScrub
+        <Link href="/" className="flex items-center gap-2">
+          <Image src="/icon.svg" alt="SameDayScrub" width={28} height={28} />
+          <span className="font-heading text-xl font-bold text-navy">SameDayScrub</span>
         </Link>
 
         {/* Desktop */}
